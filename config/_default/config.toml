@@ -1,7 +1,8 @@
 publishDir = "docs"
 canonifyurls = true
+relativeURLs = true
 baseURL = "https://tanaka.soy/"
-languageCode = "jp"
+languageCode = "ja-jp"
 DefaultContentLanguage = "jp"
 title = "Website of Yoshikazu Tanaka"
 
