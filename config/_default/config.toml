@@ -1,4 +1,6 @@
-baseURL = "https://tanaka.soy"
+publishDir = "docs"
+canonifyurls = true
+baseURL = "https://tanaka.soy/"
 languageCode = "jp"
 DefaultContentLanguage = "jp"
 title = "Website of Yoshikazu Tanaka"
