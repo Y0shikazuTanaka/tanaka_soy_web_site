@@ -1,0 +1,12 @@
+[jp]
+title = "ブログ"
+contentDir = "content/japanese" 
+weight = 1
+LanguageName = "日本語"
+
+[en]
+title = "My blog"
+weight = 2
+LanguageName = "English"
+contentDir = "content/english"
+

@@ -1,0 +1,17 @@
+  [[main]]
+  name = "ホーム"
+  identifier = "home"
+  weight = 100
+  url = "/"
+
+  [[main]]
+  name = "ブログ"
+  weight = 200
+  identifier = "posts"
+  url = "/post/"
+
+  [[main]]
+  name = "自己紹介"
+  weight = 400
+  identifier = "about"
+  url = "/about/"
