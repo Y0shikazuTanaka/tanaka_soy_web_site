@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://tanaka.soy/</loc>
-    <lastmod>2023-05-27T00:47:41+00:00</lastmod>
+    <lastmod>2023-05-25T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -16,7 +16,7 @@
                 />
   </url><url>
     <loc>https://tanaka.soy/tags/blog/</loc>
-    <lastmod>2023-05-27T00:47:41+00:00</lastmod>
+    <lastmod>2023-05-25T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -29,7 +29,7 @@
                 />
   </url><url>
     <loc>https://tanaka.soy/tags/computer/</loc>
-    <lastmod>2023-05-27T00:47:41+00:00</lastmod>
+    <lastmod>2023-05-25T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -41,8 +41,21 @@
                 href="https://tanaka.soy/tags/computer/"
                 />
   </url><url>
+    <loc>https://tanaka.soy/tags/hardware/</loc>
+    <lastmod>2023-05-25T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tanaka.soy/en/tags/hardware/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="jp"
+                href="https://tanaka.soy/tags/hardware/"
+                />
+  </url><url>
     <loc>https://tanaka.soy/post/</loc>
-    <lastmod>2023-05-27T00:47:41+00:00</lastmod>
+    <lastmod>2023-05-25T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -54,8 +67,21 @@
                 href="https://tanaka.soy/post/"
                 />
   </url><url>
+    <loc>https://tanaka.soy/post/blog/2022-05-25_samsung980pro2tb/</loc>
+    <lastmod>2023-05-25T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tanaka.soy/en/post/blog/2022-05-25_samsung980pro2tb/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="jp"
+                href="https://tanaka.soy/post/blog/2022-05-25_samsung980pro2tb/"
+                />
+  </url><url>
     <loc>https://tanaka.soy/tags/</loc>
-    <lastmod>2023-05-27T00:47:41+00:00</lastmod>
+    <lastmod>2023-05-25T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -65,19 +91,6 @@
                 rel="alternate"
                 hreflang="jp"
                 href="https://tanaka.soy/tags/"
-                />
-  </url><url>
-    <loc>https://tanaka.soy/post/blog/yyyy-mm-dd_blog_template/</loc>
-    <lastmod>2023-05-27T00:47:41+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://tanaka.soy/en/post/blog/yyyy-mm-dd_blog_template/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="jp"
-                href="https://tanaka.soy/post/blog/yyyy-mm-dd_blog_template/"
                 />
   </url><url>
     <loc>https://tanaka.soy/about/</loc>

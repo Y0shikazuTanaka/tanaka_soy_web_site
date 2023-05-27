@@ -1,7 +1,7 @@
 ---
 title: 'ブログテンプレート'
-date: 2023-05-27T0:47:41+00:00
-draft: false
+date: 2023-05-27T00:00:00+00:00
+draft: true
 tags:
   - blog
   - computer
