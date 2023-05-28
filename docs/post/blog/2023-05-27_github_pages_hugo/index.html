@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html
+  dir="ltr"
+  lang="jp"
+  data-theme=""
+  
+    class="html theme--light"
+  
+><head>
+  <title>
+    
+      
+        [健忘録] Github PagesとHugoで始める独自ドメインの静的Webサイト |
+      Yoshikazu Tanaka
+
+  </title>
+
+  
+  <meta charset="utf-8" /><meta name="generator" content="Hugo 0.112.3"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="author" content="Yoshikazu Tanaka" />
+  <meta
+    name="description"
+    content="田中　嘉一"
+  />
+  
+  
+    
+    
+    <link
+      rel="stylesheet"
+      href="https://tanaka.soy/scss/main.min.1147aa5bacb4bce677a0e264073829caedb82fd18ea07a5f1d80521f539d1c45.css"
+      integrity=""
+      crossorigin="anonymous"
+      type="text/css"
+    />
+  
+
+  
+  <link
+    rel="stylesheet"
+    href="https://tanaka.soy/css/markupHighlight.min.73ccfdf28df555e11009c13c20ced067af3cb021504cba43644c705930428b00.css"
+    integrity="sha256-c8z98o31VeEQCcE8IM7QZ688sCFQTLpDZExwWTBCiwA="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  
+  <link
+    rel="stylesheet"
+    href="https://tanaka.soy/fontawesome/css/fontawesome.min.7f3c2281c7f965ce3c64888aa452793252a0416909c181097f81d0a0f7d1624e.css"
+    integrity=""
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="https://tanaka.soy/fontawesome/css/solid.min.35fc032da8ede6681675d20a2f862fb9e1045c1d512d495fcf862c054daffef2.css"
+    integrity=""
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="https://tanaka.soy/fontawesome/css/regular.min.3b92357925ea7284f0c6b0378396f39f470f7842ed9702f337e667c4026bf837.css"
+    integrity=""
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="https://tanaka.soy/fontawesome/css/brands.min.ebb1096e1976e8cc4e2532cfa050b8f30eb13b8eb06be5cee3e38eb426b838ea.css"
+    integrity=""
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link rel="shortcut icon" href="https://tanaka.soy/favicons/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="https://tanaka.soy/favicons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="https://tanaka.soy/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="https://tanaka.soy/favicons/favicon-16x16.png" />
+
+  <link rel="canonical" href="https://tanaka.soy/post/blog/2023-05-27_github_pages_hugo/" />
+
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="https://tanaka.soy/js/anatole-header.min.f9132794301a01ff16550ed66763482bd848f62243d278f5e550229a158bfd32.js"
+    integrity="sha256-&#43;RMnlDAaAf8WVQ7WZ2NIK9hI9iJD0nj15VAimhWL/TI="
+    crossorigin="anonymous"
+  ></script>
+
+  
+    
+    
+    <script
+      type="text/javascript"
+      src="https://tanaka.soy/js/anatole-theme-switcher.min.d6d329d93844b162e8bed1e915619625ca91687952177552b9b3e211014a2957.js"
+      integrity="sha256-1tMp2ThEsWLovtHpFWGWJcqRaHlSF3VSubPiEQFKKVc="
+      crossorigin="anonymous"
+    ></script>
+  
+
+  
+
+
+  
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="[健忘録] Github PagesとHugoで始める独自ドメインの静的Webサイト"/>
+<meta name="twitter:description" content="Wordpressほど高機能は要らないけど、お金をかけずに自分のサイトが作れます。
+本サイトはHugoで作成した静的WebサイトデータとGithub Pagesで動いています。
+費用は独自ドメインの費用のみです。
+Windows環境でHugoの環境構築 WindowsでHugoが動く環境を構築する
+前提 Windowsのパッケージ管理ソフト、Chocolateyがインストールされていること。
+インストール choco install hugo -y choco install hugo-extended -y choco install go -y choco install git -y 確認 コマンドプロンプトで「hugo version」を実行し、以下のように表示されればOK。"/>
+
+
+
+  
+  <meta property="og:title" content="[健忘録] Github PagesとHugoで始める独自ドメインの静的Webサイト" />
+<meta property="og:description" content="Wordpressほど高機能は要らないけど、お金をかけずに自分のサイトが作れます。
+本サイトはHugoで作成した静的WebサイトデータとGithub Pagesで動いています。
+費用は独自ドメインの費用のみです。
+Windows環境でHugoの環境構築 WindowsでHugoが動く環境を構築する
+前提 Windowsのパッケージ管理ソフト、Chocolateyがインストールされていること。
+インストール choco install hugo -y choco install hugo-extended -y choco install go -y choco install git -y 確認 コマンドプロンプトで「hugo version」を実行し、以下のように表示されればOK。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://tanaka.soy/post/blog/2023-05-27_github_pages_hugo/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2023-05-27T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-05-27T00:00:00+00:00" /><meta property="og:site_name" content="Yoshikazu Tanaka" />
+
+
+
+  
+  
+  
+  
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "post",
+        "name": "[健忘録] Github PagesとHugoで始める独自ドメインの静的Webサイト",
+        "headline": "[健忘録] Github PagesとHugoで始める独自ドメインの静的Webサイト",
+        "alternativeHeadline": "",
+        "description": "
+      
+        Wordpressほど高機能は要らないけど、お金をかけずに自分のサイトが作れます。\n本サイトはHugoで作成した静的WebサイトデータとGithub Pagesで動いています。\n費用は独自ドメインの費用のみです。\nWindows環境でHugoの環境構築 WindowsでHugoが動く環境を構築する\n前提 Windowsのパッケージ管理ソフト、Chocolateyがインストールされていること。\nインストール choco install hugo -y choco install hugo-extended -y choco install go -y choco install git -y 確認 コマンドプロンプトで「hugo version」を実行し、以下のように表示されればOK。
+
+
+      
+
+
+    ",
+        "inLanguage": "ja-jp",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/tanaka.soy\/post\/blog\/2023-05-27_github_pages_hugo\/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": "Yoshikazu Tanaka"
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": "Yoshikazu Tanaka"
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": "Yoshikazu Tanaka"
+        },
+        "copyrightHolder" : {
+            "@type": "Person",
+            "name": "Yoshikazu Tanaka"
+        },
+        "copyrightYear" : "2023",
+        "dateCreated": "2023-05-27T00:00:00.00Z",
+        "datePublished": "2023-05-27T00:00:00.00Z",
+        "dateModified": "2023-05-27T00:00:00.00Z",
+        "publisher":{
+            "@type":"Organization",
+            "name": "Yoshikazu Tanaka",
+            "url": "https://tanaka.soy/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https:\/\/tanaka.soy\/favicons\/favicon-32x32.png",
+                "width":"32",
+                "height":"32"
+            }
+        },
+        "image": 
+      [
+      ]
+
+    ,
+        "url" : "https:\/\/tanaka.soy\/post\/blog\/2023-05-27_github_pages_hugo\/",
+        "wordCount" : "340",
+        "genre" : [ ],
+        "keywords" : [ 
+      
+      "blog"
+
+    
+      
+        ,
+
+      
+      "computer"
+
+    ]
+    }
+  </script>
+
+
+</head>
+<body class="body">
+    <div class="wrapper">
+      <aside
+        
+          class="wrapper__sidebar"
+        
+      ><div
+  class="sidebar
+    animated fadeInDown
+  "
+>
+  <div class="sidebar__content">
+    <div class="sidebar__introduction">
+      <img
+        class="sidebar__introduction-profileimage"
+        src="https://tanaka.soy/images/profile.jpg"
+        alt="profile picture"
+      />
+      
+        <div class="sidebar__introduction-title">
+          <a href="https://tanaka.soy/">Yoshikazu Tanaka</a>
+        </div>
+      
+      <div class="sidebar__introduction-description">
+        <p>田中　嘉一</p>
+      </div>
+    </div>
+    <ul class="sidebar__list">
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://twitter.com/Yoshikazu_piano"
+            target="_blank"
+            rel="noopener me"
+            aria-label="twitter"
+            title="twitter"
+          >
+            <i class="fab fa-twitter fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://www.youtube.com/channel/UCiQsiHjnlgCagbfMEqGpjWw"
+            target="_blank"
+            rel="noopener me"
+            aria-label="youtube"
+            title="youtube"
+          >
+            <i class="fab fa-youtube fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://www.tiktok.com/@yoshikazu_piano"
+            target="_blank"
+            rel="noopener me"
+            aria-label="tiktok"
+            title="tiktok"
+          >
+            <i class="fab fa-tiktok fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://github.com/Y0shikazuTanaka"
+            target="_blank"
+            rel="noopener me"
+            aria-label="GitHub"
+            title="GitHub"
+          >
+            <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+    </ul>
+  </div><footer class="footer footer__sidebar">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        Yoshikazu Tanaka
+        2023
+      
+    </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="https://tanaka.soy/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js"
+    integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ="
+    crossorigin="anonymous"
+  ></script></div>
+</aside>
+      <main
+        
+          class="wrapper__main"
+        
+      >
+        <header class="header"><div
+  class="
+    animated fadeInDown
+  "
+>
+  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+  </a>
+  <nav class="nav">
+    <ul class="nav__list" id="navMenu">
+      
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="https://tanaka.soy/"
+              
+              title=""
+              >ホーム</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="https://tanaka.soy/post/"
+              
+              title=""
+              >ブログ</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="https://tanaka.soy/about/"
+              
+              title=""
+              >自己紹介</a
+            >
+          </li>
+        
+
+      
+    </ul>
+    <ul class="nav__list nav__list--end">
+      
+      
+        <li class="nav__list-item">
+          <div class="themeswitch">
+            <a title="Switch Theme">
+              <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+          </div>
+        </li>
+      
+    </ul>
+  </nav>
+</div>
+</header>
+  <div
+    class="post 
+      animated fadeInDown
+    "
+  >
+    
+    <div class="post__content">
+      <h1>[健忘録] Github PagesとHugoで始める独自ドメインの静的Webサイト</h1>
+      
+        <ul class="post__meta">
+          <li class="post__meta-item">
+            <em class="fas fa-calendar-day post__meta-icon"></em>
+            <span class="post__meta-text"
+              >
+                
+                  2023-05-27
+                
+
+              
+            </span>
+          </li>
+          
+        </ul>
+      <p>Wordpressほど高機能は要らないけど、お金をかけずに自分のサイトが作れます。<br>
+本サイトはHugoで作成した静的WebサイトデータとGithub Pagesで動いています。<br>
+費用は独自ドメインの費用のみです。</p>
+<h1 id="windows環境でhugoの環境構築">Windows環境でHugoの環境構築</h1>
+<p>WindowsでHugoが動く環境を構築する</p>
+<h2 id="前提">前提</h2>
+<p>Windowsのパッケージ管理ソフト、<a href="https://chocolatey.org/">Chocolatey</a>がインストールされていること。</p>
+<h2 id="インストール">インストール</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">choco install hugo -y
+</span></span><span class="line"><span class="cl">choco install hugo-extended -y
+</span></span><span class="line"><span class="cl">choco install go -y
+</span></span><span class="line"><span class="cl">choco install git -y
+</span></span></code></pre></div><h2 id="確認">確認</h2>
+<p>コマンドプロンプトで「hugo version」を実行し、以下のように表示されればOK。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">PS C:\Users\yt\Develop\tanaka_soy_web_site&gt; hugo version
+</span></span><span class="line"><span class="cl">hugo v0.112.3-ba6f74e40420d76f15fc8c2358be90f7aca98e0e+extended windows/amd64 BuildDate=2023-05-24T14:42:50Z VendorInfo=gohugoio
+</span></span></code></pre></div><h1 id="githubへサイト用のリポジトリを作成とローカルにcloneする">Githubへサイト用のリポジトリを作成とローカルにCloneする</h1>
+<p>無料アカウントでGithub pagesを利用する場合、Publicリポジトリにする必要があります。<br>
+適当な名前をつけて、公開リポジトリを作成します。</p>
+<h2 id="リポジトリのクローン">リポジトリのクローン</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl"># git clone https://github.com/{user name}/{repo name}.git
+</span></span><span class="line"><span class="cl">git clone https://github.com/Y0shikazuTanaka/tanaka_soy_web_site.git
+</span></span></code></pre></div><h1 id="hugoで新しいサイトを作成する">Hugoで新しいサイトを作成する</h1>
+<h2 id="新規プロジェクトの作成">新規プロジェクトの作成</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl"># hugo new site {サイト名(英語)}
+</span></span><span class="line"><span class="cl">hugo new site tanaka_soy
+</span></span></code></pre></div><h2 id="テーマの適応">テーマの適応</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-v" data-lang="v"><span class="line"><span class="cl"><span class="nv">cd</span> <span class="p">.</span><span class="o">/</span><span class="nv">tanaka_soy</span>
+</span></span><span class="line"><span class="cl"><span class="o">#</span> <span class="nc">Other</span> <span class="nv">themes</span><span class="p">:</span> <span class="nv">https</span><span class="p">:</span><span class="c1">//themes.gohugo.io/
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nv">git</span> <span class="nv">submodule</span> <span class="nv">add</span> <span class="nv">https</span><span class="p">:</span><span class="c1">//github.com/lxndrblz/anatole.git themes/anatole
+</span></span></span></code></pre></div><p>表示の検証のため、themes/anatole/exampleSite 内のフォルダ・ファイルをすべてコピーする。</p>
+<p>config.toml へテーマを適応</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl"># ./config/_default/config.toml
+</span></span><span class="line"><span class="cl">theme = &#34;anatole&#34;
+</span></span></code></pre></div><p>「hugo server」コマンドでWebサイトを確認する。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">hugo server
+</span></span><span class="line"><span class="cl">Start building sites …
+</span></span><span class="line"><span class="cl">hugo v0.112.3-ba6f74e40420d76f15fc8c2358be90f7aca98e0e+extended windows/amd64 BuildDate=2023-05-24T14:42:50Z VendorInfo=gohugoio
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">                   | JP | EN
+</span></span><span class="line"><span class="cl">-------------------+----+-----
+</span></span><span class="line"><span class="cl">  Pages            | 23 | 21
+</span></span><span class="line"><span class="cl">  Paginator pages  |  0 |  0
+</span></span><span class="line"><span class="cl">  Non-page files   |  0 |  0
+</span></span><span class="line"><span class="cl">  Static files     | 11 | 11
+</span></span><span class="line"><span class="cl">  Processed images |  0 |  0
+</span></span><span class="line"><span class="cl">  Aliases          | 10 |  9
+</span></span><span class="line"><span class="cl">  Sitemaps         |  2 |  1
+</span></span><span class="line"><span class="cl">  Cleaned          |  0 |  0
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Built in 279 ms
+</span></span><span class="line"><span class="cl">Watching for changes in C:\Users\yt\Develop\tanaka_soy_web_site\{archetypes,assets,content,data,layouts,static,themes}
+</span></span><span class="line"><span class="cl">Watching for config changes in C:\Users\yt\Develop\tanaka_soy_web_site\hugo.toml, C:\Users\yt\Develop\tanaka_soy_web_site\config\_default
+</span></span><span class="line"><span class="cl">Environment: &#34;development&#34;
+</span></span><span class="line"><span class="cl">Serving pages from memory
+</span></span><span class="line"><span class="cl">Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
+</span></span><span class="line"><span class="cl">Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+</span></span><span class="line"><span class="cl">Press Ctrl+C to stop
+</span></span></code></pre></div><h2 id="cssエラー回避">CSSエラー回避</h2>
+<p>hugoコマンドでビルドし、htmlを出力したデータを開くと、表示が崩れ、ブラウザinspectを見るとCSSのエラーになる。<br>
+Windowsでビルドした場合だけしか発生しないかもしれない。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Failed to find a valid digest in the &#39;integrity&#39; attribute for resource &#39;https://tanaka.soy/fontawesome/css/solid.min.35fc032da8ede6681675d20a2f862fb9e1045c1d512d495fcf862c054daffef2.css&#39; with computed SHA-256 integrity &#39;VdgzNIGwegjgfPbzcxl1OitH6Z9MOVOUxXR7SLSVqps=&#39;. The resource has been blocked.
+</span></span></code></pre></div><p><a href="https://stackoverflow.com/questions/65040931/hugo-failed-to-find-a-valid-digest-in-the-integrity-attribute-for-resource/65052963#65052963">stackoverflow</a>に解決策が載っていた。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl"># themes\anatole\layouts\partials\head.html
+</span></span><span class="line"><span class="cl">integrity=&#34;{{ $style.Data.Integrity }}&#34;
+</span></span><span class="line"><span class="cl"># TO
+</span></span><span class="line"><span class="cl">integrity=&#34;&#34;
+</span></span></code></pre></div><h2 id="ビルドしてリポジトリへpushする">ビルドしてリポジトリへPUSHする</h2>
+<p>hugoコマンドでビルドし、公開用のファイルを作成して、Gighubリポジトリへcommit &amp; pushする。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">PS C:\Users\yt\Develop\tanaka_soy_web_site&gt; hugo
+</span></span><span class="line"><span class="cl">Start building sites …
+</span></span><span class="line"><span class="cl">hugo v0.112.3-ba6f74e40420d76f15fc8c2358be90f7aca98e0e+extended windows/amd64 BuildDate=2023-05-24T14:42:50Z VendorInfo=gohugoio
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">                   | JP | EN
+</span></span><span class="line"><span class="cl">-------------------+----+-----
+</span></span><span class="line"><span class="cl">  Pages            | 23 | 21
+</span></span><span class="line"><span class="cl">  Paginator pages  |  0 |  0
+</span></span><span class="line"><span class="cl">  Non-page files   |  0 |  0
+</span></span><span class="line"><span class="cl">  Static files     | 12 | 12
+</span></span><span class="line"><span class="cl">  Processed images |  0 |  0
+</span></span><span class="line"><span class="cl">  Aliases          | 10 |  9
+</span></span><span class="line"><span class="cl">  Sitemaps         |  2 |  1
+</span></span><span class="line"><span class="cl">  Cleaned          |  0 |  0
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Total in 226 ms
+</span></span></code></pre></div><h1 id="独自ドメインの設定">独自ドメインの設定</h1>
+<h2 id="configtoml-へドメインとビルドの設定">config.toml へドメインとビルドの設定</h2>
+<p>baseURLへ独自ドメインを設定する。<br>
+canonifyurlsをtrueにするとリソースのパスをいい感じにしてくれるらしい。<br>
+Github pagesはdocsフォルダ内をWebサイトとして公開するため、ビルドファイルは「docs」を指定する。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl"># ./config/_default/config.toml
+</span></span><span class="line"><span class="cl">publishDir = &#34;docs&#34;
+</span></span><span class="line"><span class="cl">canonifyurls = true
+</span></span><span class="line"><span class="cl">baseURL = &#34;https://tanaka.soy/&#34;
+</span></span></code></pre></div><h2 id="独自ドメインのdns設定">独自ドメインのDNS設定</h2>
+<p>私はさくらインターネットのメールボックスも運用しているので、独自ドメインの設定にメール設定も入っているが、GoogleDomainsの場合は以下のようになれば良い。</p>
+<figure class="center"><img src="https://tanaka.soy/images/post/blog/2023-05-27_095227.png"
+         alt="image"/><figcaption>
+            <p>GoogleDomeins</p>
+        </figcaption>
+</figure>
+
+<h2 id="github-pagesの設定">Github Pagesの設定</h2>
+<ul>
+<li>Source
+<ul>
+<li>Deploy form a branch を選択</li>
+</ul>
+</li>
+<li>Branch
+<ul>
+<li>master /docs を選択</li>
+</ul>
+</li>
+<li>Custom domain
+<ul>
+<li>自身のドメインを指定</li>
+</ul>
+</li>
+<li>Enforce HTTPS チェックON</li>
+</ul>
+<figure class="center"><img src="https://tanaka.soy/images/post/blog/2023-05-27_100029.png"
+         alt="image"/><figcaption>
+            <p>GithubPages</p>
+        </figcaption>
+</figure>
+
+<h1 id="まとめ">まとめ</h1>
+<p>CSSのエラーなど、ハマりポイントもあったが、個人ブログ程度であれば十分使える。<br>
+また、静的サイトなので、表示も爆速である。</p>
+</div>
+    <div class="post__footer">
+      
+
+      
+        <span><a class="tag" href="https://tanaka.soy/tags/blog/">blog</a><a class="tag" href="https://tanaka.soy/tags/computer/">computer</a></span>
+
+
+      
+    </div>
+
+    
+  </div>
+
+      </main>
+    </div><footer class="footer footer__base">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        Yoshikazu Tanaka
+        2023
+      
+    </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="https://tanaka.soy/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js"
+    integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ="
+    crossorigin="anonymous"
+  ></script></body>
+</html>

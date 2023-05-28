@@ -6,7 +6,23 @@
     <description>Recent content in Posts on ブログ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Thu, 25 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://tanaka.soy/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 27 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://tanaka.soy/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[健忘録] Github PagesとHugoで始める独自ドメインの静的Webサイト</title>
+      <link>https://tanaka.soy/post/blog/2023-05-27_github_pages_hugo/</link>
+      <pubDate>Sat, 27 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://tanaka.soy/post/blog/2023-05-27_github_pages_hugo/</guid>
+      
+        <description>Wordpressほど高機能は要らないけど、お金をかけずに自分のサイトが作れます。
+本サイトはHugoで作成した静的WebサイトデータとGithub Pagesで動いています。
+費用は独自ドメインの費用のみです。
+Windows環境でHugoの環境構築 WindowsでHugoが動く環境を構築する
+前提 Windowsのパッケージ管理ソフト、Chocolateyがインストールされていること。
+インストール choco install hugo -y choco install hugo-extended -y choco install go -y choco install git -y 確認 コマンドプロンプトで「hugo version」を実行し、以下のように表示されればOK。</description>
+      
+    </item>
+    
     <item>
       <title>Samsung 980 PRO ヒートシンクモデル 2TBを購入</title>
       <link>https://tanaka.soy/post/blog/2023-05-25_samsung980pro2tb/</link>
