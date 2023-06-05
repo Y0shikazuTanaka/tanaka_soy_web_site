@@ -6,7 +6,21 @@
     <description>Recent content in blog on ブログ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sat, 27 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://tanaka.soy/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 05 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://tanaka.soy/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Intel AX210 WiFi&amp;Bluetooth モジュール購入</title>
+      <link>https://tanaka.soy/post/blog/2023-06-05_intel_ax210_m2_wifi_module/</link>
+      <pubDate>Mon, 05 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://tanaka.soy/post/blog/2023-06-05_intel_ax210_m2_wifi_module/</guid>
+      
+        <description>ディスクトップPCでWiFiを利用したいため、Intel AX210 WiFiカードを購入した。
+WiFi Directは対応WiFiカードでしか使えない WiFi Directを利用したいのは、Androidタブレットの画面をPCへ映したいからだ。
+今までディスクトップPCは有線LAN接続だったため、WiFiカードやUSBアダプタを搭載したことはなかった。
+しかし、Androidなどのモバイル端末との直接接続はWiFi Directを利用することが多く、ディスクトップでもWiFiカードを搭載しないとWindows標準機能でも利用できない機能が存在する。</description>
+      
+    </item>
+    
     <item>
       <title>[健忘録] Github PagesとHugoで始める独自ドメインの静的Webサイト</title>
       <link>https://tanaka.soy/post/blog/2023-05-27_github_pages_hugo/</link>
