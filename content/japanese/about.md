@@ -6,4 +6,4 @@ aliases = ["about-us", "about-hugo", "contact"]
 author = "Hugo Authors"
 +++
 
-自己紹介　日本語
+自己紹介
