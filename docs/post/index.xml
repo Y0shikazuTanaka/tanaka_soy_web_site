@@ -6,7 +6,25 @@
     <description>Recent content in Posts on ブログ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Mon, 05 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://tanaka.soy/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 17 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://tanaka.soy/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PCケースのフロントUSBをUSB3.0に交換した</title>
+      <link>https://tanaka.soy/post/blog/2023-06-17_pc_case_usb_update/</link>
+      <pubDate>Sat, 17 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://tanaka.soy/post/blog/2023-06-17_pc_case_usb_update/</guid>
+      
+        <description>デスクトップPCのフロントパネルのUSBを3.0へ交換した。
+マザーボードのUSBピンヘッダは、USBが2本取れる 私が使っているケースはUSB2.0と3.0が1つずつあり、マザーボード側の接続もそれぞれピンヘッダを消費してもったいない状態だった。
+AliExpressで使えそうなUSBケーブルを見つけたので、打ち替えてみることにした。
+PCケースのフロントパネルの加工 フロントパネルの裏側に、USBコネクタやオーディオコネクタを止めている台がネジ止めされているので、この台を加工する。
+今回買ったフロントパネル用USBコネクタの、奥行き方向は加工しなくても問題はなかった。
+端子が固定されている台に、ドリルで穴を開け、ヤスリで広げ、頑張って穴あけして端子をねじ止めする。
+片方の端子にネジがなかったので、家にあった適当な木ネジで代用した。
+まとめ 古いPCケースを使っていて、USB2.</description>
+      
+    </item>
+    
     <item>
       <title>Intel AX210 WiFi&amp;Bluetooth モジュール購入</title>
       <link>https://tanaka.soy/post/blog/2023-06-05_intel_ax210_m2_wifi_module/</link>

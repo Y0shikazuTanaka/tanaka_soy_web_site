@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://tanaka.soy/</loc>
-    <lastmod>2023-06-05T00:00:00+00:00</lastmod>
+    <lastmod>2023-06-17T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -16,7 +16,7 @@
                 />
   </url><url>
     <loc>https://tanaka.soy/tags/blog/</loc>
-    <lastmod>2023-06-05T00:00:00+00:00</lastmod>
+    <lastmod>2023-06-17T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -29,7 +29,7 @@
                 />
   </url><url>
     <loc>https://tanaka.soy/tags/computer/</loc>
-    <lastmod>2023-06-05T00:00:00+00:00</lastmod>
+    <lastmod>2023-06-17T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -41,11 +41,11 @@
                 href="https://tanaka.soy/tags/computer/"
                 />
   </url><url>
-    <loc>https://tanaka.soy/post/blog/2023-06-05_intel_ax210_m2_wifi_module/</loc>
-    <lastmod>2023-06-05T00:00:00+00:00</lastmod>
+    <loc>https://tanaka.soy/post/blog/2023-06-17_pc_case_usb_update/</loc>
+    <lastmod>2023-06-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://tanaka.soy/post/</loc>
-    <lastmod>2023-06-05T00:00:00+00:00</lastmod>
+    <lastmod>2023-06-17T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -58,7 +58,7 @@
                 />
   </url><url>
     <loc>https://tanaka.soy/tags/</loc>
-    <lastmod>2023-06-05T00:00:00+00:00</lastmod>
+    <lastmod>2023-06-17T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -69,6 +69,9 @@
                 hreflang="jp"
                 href="https://tanaka.soy/tags/"
                 />
+  </url><url>
+    <loc>https://tanaka.soy/post/blog/2023-06-05_intel_ax210_m2_wifi_module/</loc>
+    <lastmod>2023-06-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://tanaka.soy/post/blog/2023-05-27_github_pages_hugo/</loc>
     <lastmod>2023-05-27T00:00:00+00:00</lastmod>
