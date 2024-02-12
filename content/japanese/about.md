@@ -6,4 +6,5 @@ aliases = ["about-us", "about-hugo", "contact"]
 author = "Hugo Authors"
 +++
 
-自己紹介
+職業はシステムエンジニア。
+趣味でピアノを弾いてます。

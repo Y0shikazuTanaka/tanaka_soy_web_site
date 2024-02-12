@@ -5,7 +5,7 @@
     <link>https://tanaka.soy/</link>
     <description>Recent content on ブログ</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ja-jp</language>
+    <language>jp</language>
     <lastBuildDate>Sat, 17 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://tanaka.soy/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PCケースのフロントUSBをUSB3.0に交換した</title>
@@ -76,7 +76,7 @@ Windows環境でHugoの環境構築 WindowsでHugoが動く環境を構築する
       
       <guid>https://tanaka.soy/about/</guid>
       
-        <description>自己紹介</description>
+        <description>職業はシステムエンジニア。 趣味でピアノを弾いてます。</description>
       
     </item>
     
